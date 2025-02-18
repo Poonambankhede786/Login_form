@@ -1,0 +1,223 @@
+html {
+    font-size: 62.5%;
+  }
+  * {
+    padding: 0rem;
+    margin: 0rem;
+    box-sizing: border-box;
+  }
+  body {
+    background-color: #ffffff rgb(168, 99, 99) rgb(26, 26, 155);
+  }
+  .bg-container {
+    border: 0.2rem solid black;
+    width: 72.4rem;
+    height: 63.8rem;
+    margin: 4rem auto;
+    text-align: center;
+    background-color: #0a4b8b;
+    box-shadow: 8px 8px 6px 3px;
+    /* padding: 35px; */
+  }
+  form {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+  }
+  .div {
+    margin: 0.2rem 1.5rem 1.5rem 14.9rem;
+    margin-left: 14.9rem;
+    display: block;
+    font-weight: bolder;
+    font-size: 1.7rem;
+    font-family: "Montserrat", sans-serif;
+  }
+  .name {
+    margin-top: 2.6rem;
+  }
+  .label {
+    position: relative;
+    left: -13.4rem;
+    color: #ffffff;
+  }
+  .input {
+    padding: 0.2rem;
+    width: 24.6rem;
+    position: relative;
+    font-weight: bold;
+    font-family: "Montserrat", sans-serif;
+  }
+  .email label {
+    left: -13.6rem;
+  }
+  .password label {
+    left: -12.1rem;
+  }
+  .password input {
+    left: -1.6rem;
+  }
+  .phone-no label {
+    left: -9.6rem;
+  }
+  .phone-no input {
+    left: -4.3rem;
+  }
+  .gender label {
+    left: -25.6rem;
+    top: 0.8rem;
+  }
+  .gender-2 {
+    display: inline-block;
+    position: relative;
+    top: -4rem;
+    left: 2.3rem;
+    font-weight: bold;
+    font-family: "Montserrat", sans-serif;
+    color: #ffffff;
+    font-size: 1.6rem;
+  }
+  .language label {
+    left: -15.7rem;
+    top: -4.1rem;
+    /* font-size: 1.7rem; */
+  }
+  .language select {
+    position: relative;
+    left: -6.1rem;
+    top: -3.4rem;
+  }
+  .zip-code label {
+    left: -12.5rem;
+    top: -3.4rem;
+  }
+  .zip-code input {
+    left: -1.9rem;
+    top: -2.5rem;
+  }
+  .about label {
+    top: -5.8rem;
+    left: -13.7rem;
+  }
+  .about textarea {
+    height: 6rem;
+    position: relative;
+    left: -0.9rem;
+    top: -1.6rem;
+    font-weight: bold;
+    font-family: "Montserrat", sans-serif;
+  }
+  .button {
+    border: none;
+    padding: 0.6rem;
+    width: 49.1rem;
+    position: relative;
+    left: -5.5rem;
+    top: -0.1rem;
+    font-weight: bolder;
+    font-size: 2.1rem;
+    font-family: "Montserrat", sans-serif;
+    border-radius: 0.5rem;
+  }
+  #input {
+    padding: 0.9rem;
+    font-size: 1.6rem;
+    font-weight: bold;
+    font-family: "Montserrat", sans-serif;
+  }
+  @media (max-width: 99.8rem) {
+    html {
+      font-size: 62%;
+      /* font-weight: bolder; */
+    }
+  }
+  
+  @media (max-width: 76.8rem) {
+    html {
+      font-size: 37%;
+      /* font-weight: bolder; */
+    }
+    .input-2 {
+      width: 1.7rem;
+      position: relative;
+      top: 0.6rem;
+    }
+    .gender label {
+      top: 1.3rem;
+    }
+  }
+  @media (max-width: 32rem) {
+    html {
+      font-size: 25%;
+    }
+    .input-2 {
+      width: 1.9rem;
+      position: relative;
+      top: 0.9rem;
+    }
+    .gender label {
+      top: 2rem;
+    }
+    .bg-container {
+      height: 103.8rem;
+      margin: 11rem auto;
+    }
+    form {
+      margin: 4.2rem;
+      margin-top: 6.6rem;
+    }
+    .div {
+      margin: 3.2rem 3.5rem 0.9rem 14.9rem;
+      font-size: 2.5rem;
+    }
+    .password input {
+      left: -2.5rem;
+    }
+    .password label {
+      left: -11.1rem;
+    }
+    .phone-no input {
+      left: 4.7rem;
+      top: -3.4rem;
+    }
+    .phone-no label {
+      left: -20.5rem;
+    }
+    .gender label {
+      top: -2rem;
+    }
+    .gender-2 {
+      left: 9.8rem;
+      top: -11rem;
+    }
+    .language label {
+      left: -13.7rem;
+      top: -8.1rem;
+    }
+    .language select {
+      left: -5.1rem;
+      top: -8.4rem;
+    }
+    .zip-code label {
+      left: -11.5rem;
+      top: -7.4rem;
+    }
+    .zip-code input {
+      top: -6.5rem;
+    }
+    .about label {
+      top: -11.8rem;
+    }
+    .about textarea {
+      height: 11rem;
+      top: -3.6rem;
+    }
+    #input {
+      font-size: 1.8rem;
+    }
+    .button {
+      width: 52.1rem;
+      left: -9.5rem;
+      top: -5.1rem;
+      font-size: 2.5rem;
+    }
+  }

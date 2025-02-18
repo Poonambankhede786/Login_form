@@ -1,39 +1,106 @@
-<html>
-    <head>
-        <title>Form Submission</title>
-    </head>
-    <body>
-        <div>
-            <h2>Form Submission</h2>
-            <form id="MyForm">
-                <label for="name">Name:</label><br>
-                <input type="text" id="name" name="name"><br><br>
-                <label for="email">Email:</label><br>
-                <input type="email" id="email" name="email"><br><br>
-                <label for="Gender">Gender:</label><br>
-                <select id="gender" name="gender">
-            <option value="male">Male</option>
-            <option value="female">Female</option>
-            </select><br><br>
-            <input type="button" value="Submit" onclick="addItem()">
-            </form>
-            <h3>  Entries:  </h3>
-<select id="listBox"></select>
-        </div>
+<!DOCTYPE html>
+<html lang="en">
 
-        <script>
-            function addItem(){
-                var name=document.getElementById("name").value;
-                var email=document.getElementById("email").value;
-                var gender=document.getElementById("gender").value;
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+        integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+        integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"
+        integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"
+        integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV"
+        crossorigin="anonymous"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
+    <title>Registration Form</title>
+    <link rel="stylesheet" href="css.css">
+</head>
 
-                var entry= name + "|" + email + "|" + gender ;
-                var listBox=document.getElementById("listBox");
-                var option =document.getElementById("option");
-                option.text=entry;
-                listBox.add(option);
-                document.getElementById("MyForm").reset();
-            }
-        </script>
-    </body>
+<body>
+    <div class="bg-container d-flex flex-column justify-content-center">
+        <form action="php-backend" class="form">
+            <div class="name div">
+                <label for="name" class="label">
+                    Name :
+                </label>
+                <input type="text" placeholder="your name" class="input">
+
+            </div>
+            <div class="email div">
+                <label for="email" class="label">
+                    Email :
+                </label>
+                <input type="email" placeholder=" your email" minlength="5" maxlength="15" class="input">
+            </div>
+            <div class="password div">
+                <label for="password" class="label">
+                    Password :
+                </label>
+                <input type="password" minlength="5" maxlength="15" class="input">
+            </div>
+            <div class="phone-no div">
+                <label for="phonenumber" class="label">
+                    Phone Number :
+                </label>
+                <input type="tel" name="phonenumber" min="10" max="10" class="input">
+            </div>
+            <div class="gender div">
+                <label for="gender" class="label">
+                    Gender :
+                </label>
+            </div>
+            <div class="gender-2 div">
+                <label for="male">
+                    Male :
+                </label>
+                <input type="radio" name="my gender" class="input-2">
+                <label for="female">
+                    Female :
+                </label>
+                <input type="radio" name="my gender" class="input-2">
+                <label for="other">
+                    Other :
+                </label>
+                <input type="radio" name="my gender" class="input-2">
+            </div>
+            <div class="language div">
+                <label for="language" class="label">
+                    Language :
+                </label>
+                <select name="language" id="input">
+                    <option value="">Select language</option>
+                    <option value="hindi">Hindi</option>
+                    <option value="english">English</option>
+                    <option value="urdu">Urdu</option>
+                    <option value="other">Other</option>
+                </select>
+            </div>
+            <div class="zip-code div">
+                <label for="zip-code" class="label">
+                    Zip Code :
+                </label>
+                <input type="tel" class="input" minlength="5" maxlength="5">
+            </div>
+            <div class="about div">
+                <label for="about" class="label">
+                    About :
+                </label>
+                <textarea name="about yourself" id="yourself" cols="30" rows="10" placeholder="Write about yourself"
+                    class="input"></textarea>
+            </div>
+            <div class="btn div">
+                <button class="button" class="label">
+                    Register
+                </button>
+            </div>
+        </form>
+    </div>
+</body>
+
 </html>
